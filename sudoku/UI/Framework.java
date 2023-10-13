@@ -1,7 +1,6 @@
-package sudoku;
+package sudoku.UI;
 
 import javax.swing.*;
-import java.awt.*;
 
 public class Framework {
 
