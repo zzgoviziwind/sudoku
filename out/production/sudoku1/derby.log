@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Thu Nov 02 07:34:23 UTC 2023:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.1.0 - (1808820): instance a816c00e-018b-8ef4-62d2-00000730a5f8 
+on database directory D:\sudoku\sudu with class loader com.intellij.database.remote.jdbc.impl.JdbcClassLoader$JdbcClassLoaderImpl@e580929 
+Loaded from file:/C:/Users/1/AppData/Roaming/JetBrains/IntelliJIdea2023.2/jdbc-drivers/Apache%20Derby/10.14.1.0/derby-10.14.1.0.jar
+java.vendor=JetBrains s.r.o.
+java.runtime.version=17.0.8.1+7-b1000.32
+user.dir=D:\sudoku
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
