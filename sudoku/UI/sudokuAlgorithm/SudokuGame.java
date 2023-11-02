@@ -1,28 +1,16 @@
 package sudoku.UI.sudokuAlgorithm;
 
-public class SudokuGame {
-    private int[][] board;  // 数独棋盘
-    private boolean[][] isFilled;  // 记录哪些单元格已填写
-//    int game_difficulty;
-//    String game_status;
-//    int[][] array;
+import java.sql.SQLException;
 
-    // 获取数独棋盘的状态
-    public int[][] getBoard() {
-        return board;
-    }
+public class SudokuGame {
+
 
     // 在用户输入数字后更新游戏状态
-    public void updateBoard(int row, int col, int value) {
+    public void updateBoard(int row, int col, int value, int[][] board) {
         if (row >= 0 && row < 9 && col >= 0 && col < 9 && value >= 0 && value <= 9) {
             board[row][col] = value;
-            isFilled[row][col] = true;
-        }
-    }
 
-    // 获取已填写的状态
-    public boolean[][] getIsFilled() {
-        return isFilled;
+        }
     }
 
     //Java和JDBC将一个二维整数数组存储为BLOB字段
@@ -51,29 +39,36 @@ public class SudokuGame {
         SudokuGenerator sudokuGenerator = new SudokuGenerator(3);
         return sudokuGenerator.getBoard();
     }
+    //删除记录
+    public void deleteArray() throws SQLException {
+        ArrayDatabase arrayDatabase = new ArrayDatabase();
+        arrayDatabase.deleteArray();
+    }
+
 
     //判断用户是否完成
-    public boolean isCompleted0(){
+
+    public void isCompleted(int[][] board){
+        boolean flag = true;
         for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 9; j++) {
                 if (board[i][j]==0){
-                    return false;
+                    flag = false;
                 }
             }
         }
-        return true;
-    }
-    public String isCompleted(){
-        if (isCompleted0()){
-            return "已完成";
+
+        if (flag){
+            System.out.println("已完成");
         }else{
-            return "未完成";
+            System.out.println("未完成");
         }
     }
 
 
+
     // 检查用户数独游戏是否正确
-    public void isGameCorrect() {
+    public void isGameCorrect(int[][] board) {
         SudokuSolved sudokuSolved = new SudokuSolved();
         if (sudokuSolved.isSudokuSolved(board)){
             System.out.println("成功");
@@ -83,28 +78,14 @@ public class SudokuGame {
     }
 
 
-    public static void main(String[] args) {
-        SudokuGame sudokuGame = new SudokuGame();
-        int[][] board = sudokuGame.GenerateSimpleLevels();
-
-
+        //打印
+    public void print(int[][] board){
         for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 9; j++) {
-                System.out.print(board[i][j] + " ");
+                System.out.print(board[i][j]+" ");
             }
             System.out.println();
         }
     }
-
-
-
-
-        //打印
-//        for (int i = 0; i < 9; i++) {
-//            for (int j = 0; j < 9; j++) {
-//                System.out.print(board[i][j] + " ");
-//            }
-//            System.out.println();
-//        }
 
 }

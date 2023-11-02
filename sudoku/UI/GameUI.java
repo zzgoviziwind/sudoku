@@ -3,7 +3,8 @@ package sudoku.UI;
 import javax.swing.*;
 import java.awt.*;
 
-public class GameUI {
+public class
+GameUI {
     JFrame frame;
     public GameUI() {
         frame = new JFrame("GGBond做数独");
