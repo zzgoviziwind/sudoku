@@ -6,6 +6,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
+import javax.swing.UIManager;
+
 public class NewGameUI {
     JFrame frame;
     JButton button1,button2,button3,button4;
@@ -14,12 +16,21 @@ public class NewGameUI {
     JLabel label;
 
     public NewGameUI(){
+        //窗口风格
+        try {
+            UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
         frame = new JFrame("NewGame");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(300,200);
         frame.setResizable(false);
         frame.setLocationRelativeTo(null);
         frame.setAlwaysOnTop(true);
+
 
 
 
