@@ -30,6 +30,7 @@ public class NewGameUI {
         frame.setResizable(false);
         frame.setLocationRelativeTo(null);
         frame.setAlwaysOnTop(true);
+        frame.setIconImage(new ImageIcon("sudoku/library/images.jpg").getImage());
 
 
 
@@ -60,6 +61,8 @@ public class NewGameUI {
         dialog = new JDialog(frame,"提醒",true);
         dialog.setSize(300,200);
         dialog.setLocationRelativeTo(null);
+
+
 
         label = new JLabel("新游戏将覆盖历史进程");
         label.setBounds(85,30,180,20);

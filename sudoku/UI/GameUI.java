@@ -7,7 +7,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import static java.awt.Color.gray;
+
 
 public class GameUI {
     JFrame frame;
@@ -16,21 +16,24 @@ public class GameUI {
     JMenuItem menuItem1, menuItem2, menuItem3, menuItem4;
     JPanel panel;
     JButton[][] cell =  new JButton[9][9];
-    JButton[] numberButton = new JButton[9];;
-    JPanel buttonPanel, buttonPanel2;
+    JButton[] numberButton = new JButton[9];
+    JPanel buttonPanel, toolPanel;
+    JDialog dialog;
     JLabel label;
+    JButton button, button2;
     //记录点击button index
     int x = -1;
     int y = -1;
     public GameUI() {
-        frame = new JFrame("GGBond做数独");
+        frame = new JFrame("小呆呆做数独");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(800, 800);
         frame.setAlwaysOnTop(true);
-        frame.setCursor(new Cursor(Cursor.CROSSHAIR_CURSOR));
         frame.setResizable(false);
         frame.setLocationRelativeTo(null);
         frame.setLayout(new BorderLayout());
+        frame.setIconImage(new ImageIcon("sudoku/library/images.jpg").getImage());
+
 
         //格子
         panel = new JPanel();
@@ -67,6 +70,7 @@ public class GameUI {
         }
 
 
+        //填数字选项
         buttonPanel = new JPanel();
         for (int num = 0; num < 9; num++) {
             numberButton[num] = new JButton(String.valueOf(num+1));
@@ -74,11 +78,16 @@ public class GameUI {
             numberButton[num].setPreferredSize(new Dimension(40, 20));
 
             int finalNum = num;
+            //填数字监听
             numberButton[num].addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    cell[x][y].setText(numberButton[finalNum].getText());
-                    cell[x][y].setForeground(Color.green);
+                    if (x >= 0 && x <= 8 || y >= 0 && y <= 8){
+                        cell[x][y].setText(numberButton[finalNum].getText());
+                        cell[x][y].setForeground(Color.BLUE);
+                        x = -1;
+                        y = -1;
+                    }
                 }
             });
             buttonPanel.add(numberButton[num]);
@@ -103,6 +112,22 @@ public class GameUI {
         menu2.add(menuItem4);
         menuBar.add(menu1);
         menuBar.add(menu2);
+
+        dialog = new JDialog(frame,"提醒",true);
+        dialog.setSize(300,200);
+        dialog.setLocationRelativeTo(null);
+        label = new JLabel("螺丝刀并不能帮你做数独！");
+        label.setBounds(85,60,180,20);
+
+        dialog.setLayout(null);
+        dialog.add(label);
+
+        menuItem4.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dialog.setVisible(true);
+            }
+        });
 
 
         frame.setJMenuBar(menuBar);
