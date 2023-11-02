@@ -1,8 +1,7 @@
-package sudoku.UI.sudokuAlgorithm;
+package sudoku.Game;
 
 import java.io.*;
 import java.sql.*;
-
 
 
 public class ArrayDatabase {

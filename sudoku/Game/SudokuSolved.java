@@ -1,4 +1,4 @@
-package sudoku.UI.sudokuAlgorithm;
+package sudoku.Game;
 
 public class SudokuSolved {
     public boolean isSudokuSolved(int[][] board) {

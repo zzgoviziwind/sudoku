@@ -1,7 +1,8 @@
-package sudoku.UI.sudokuAlgorithm;
+package sudoku.Game;
+
+
 
 import java.sql.SQLException;
-import java.util.Scanner;
 
 public class test {
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
@@ -9,9 +10,9 @@ public class test {
 //      int[][] board = sudokuGame.GenerateSimpleLevels();
 //      sudokuGame.print(board);
 //    sudokuGame.storeArray(1,"未完成",board);
-        int[][]board = sudokuGame.retrieveArray();
-        sudokuGame.print(board);
-//      sudokuGame.deleteArray();
+//        int[][]board = sudokuGame.retrieveArray();
+//        sudokuGame.print(board);
+//          sudokuGame.deleteArray();
 //        Scanner in = new Scanner(System.in);
 //
 //        while (!in.next().equals("4")) {
