@@ -44,6 +44,7 @@ public class ArrayDatabase {
         }
     }
 
+
     //检索BLOB数据并将其还原为二维数组
     public int[][] retrieveArray() {
         int[][] array = null;
@@ -61,6 +62,9 @@ public class ArrayDatabase {
             if (resultSet.next()) {
                 arrayBytes = resultSet.getBytes("sudu_data");
             }
+
+
+
 
             resultSet.close();
             preparedStatement.close();

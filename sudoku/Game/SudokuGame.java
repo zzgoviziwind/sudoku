@@ -71,9 +71,9 @@ public class SudokuGame {
     public String isGameCorrect(int[][] board) {
         SudokuSolved sudokuSolved = new SudokuSolved();
         if (sudokuSolved.isSudokuSolved(board)){
-            return "成功";
+            return "       成功!";
         }else {
-            return "失败";
+            return "       失败!";
         }
     }
 

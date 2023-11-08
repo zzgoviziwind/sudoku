@@ -6,6 +6,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 
 public class
@@ -16,19 +18,33 @@ GameUI {
     JPanel panel, panel2;
     JDialog dialog, dialog2;
     JMenuBar menuBar;
-    JMenu menu;
+    JMenu menu, menu2;
     JLabel label;
     JMenuItem menuItem, menuItem2;
-    int[][] num, num2;
+    int[][]  num2;
 
     int number, x = -1, y = -1;
-    public GameUI() {
+    public GameUI(int[][] num) {
         frame = new JFrame("小呆呆做数独");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(810, 810);
+        frame.setSize(600, 600);
         frame.setResizable(false);
         frame.setLocationRelativeTo(null);
         frame.setLayout(new BorderLayout());
+
+
+        frame.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                SudokuGame sudokuGame = new SudokuGame();
+                try {
+                    sudokuGame.storeArray(1,"未完成", num2);
+                } catch (ClassNotFoundException ex) {
+                    throw new RuntimeException(ex);
+                }
+            }
+        });
+
 
 
 
@@ -37,8 +53,10 @@ GameUI {
 
 
         menuBar = new JMenuBar();
-        menu = new JMenu("提交");
+        menu = new JMenu("菜单");
+
         menuItem = new JMenuItem("提交");
+        menuItem2 = new JMenuItem("保存");
         menuItem.addActionListener(new ActionListener(){
 
             @Override
@@ -53,16 +71,45 @@ GameUI {
                 SudokuGame sudokuGame = new SudokuGame();
                 label = new JLabel(sudokuGame.isGameCorrect(num2));
                 label.setFont(new Font("微软雅黑", Font.BOLD, 30));
+                label.setBounds(100, 80, 40, 80);
                 dialog2 = new JDialog();
                 dialog2.add(label);
-                dialog2.setSize(200, 200);
+                dialog2.setSize(200, 130);
                 dialog2.setVisible(true);
-                dialog2.setDefaultCloseOperation(JDialog.EXIT_ON_CLOSE);
                 dialog2.setLocationRelativeTo(null);
+                try {
+                    sudokuGame.storeArray(1,"未完成", num2);
+                } catch (ClassNotFoundException ex) {
+                    throw new RuntimeException(ex);
+                }
             }
         });
 
+
+        //保存
+        menuItem2.addActionListener(new ActionListener(){
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                SudokuGame sudokuGame = new SudokuGame();
+                for (int i = 0; i < 9; i++){
+                    for (int j = 0; j < 9; j++){
+                        if (num2[i][j] == 0 && !cell[i][j].getText().equals("")){
+                            num2[i][j] = Integer.parseInt(cell[i][j].getText());
+                        }
+                    }
+                }
+                try {
+                    sudokuGame.storeArray(1,"未完成", num2);
+                } catch (ClassNotFoundException ex) {
+                    throw new RuntimeException(ex);
+                }
+
+            }
+        }) ;
+
         menu.add(menuItem);
+        menu.add(menuItem2);
         menuBar.add(menu);
         frame.setJMenuBar(menuBar);
 
@@ -71,17 +118,6 @@ GameUI {
 
 
 
-
-
-
-
-
-
-
-
-
-        SudokuGame game = new SudokuGame();
-        num = game.GenerateSimpleLevels();
         num2 = num;
         // 创建一个面板
         panel = new JPanel(new GridLayout(9,9));
@@ -129,7 +165,8 @@ GameUI {
                             int buttonX = cell[finalCol][finalRow].getLocationOnScreen().x;
                             int buttonY = cell[finalCol][finalRow].getLocationOnScreen().y;
                             dialog.setLocation(buttonX + cell[finalCol][finalRow].getWidth(), buttonY);
-                            dialog.setVisible(true);
+                            // 对话框未可见，显示它
+                            dialog.setVisible(!dialog.isVisible()); // 对话框已可见，隐藏它
                             x = finalCol;
                             y = finalRow;
                         }
@@ -147,11 +184,11 @@ GameUI {
 
         panel2 = new JPanel(new GridLayout(3,3));
         dialog = new JDialog();
-        dialog.setSize(270, 270);
+        dialog.setSize(200, 200);
 
         for (int i = 1; i <= 9; i++) {
             button = new JButton(String.valueOf(i));
-            button.setFont(new Font("微软雅黑", Font.BOLD, 30));
+            button.setFont(new Font("微软雅黑", Font.BOLD, 20));
             button.setForeground(Color.RED);
             int finalI = i;
 
@@ -161,7 +198,7 @@ GameUI {
                     number = finalI;
                     cell[x][y].setText(String.valueOf(number));
                     cell[x][y].setForeground(Color.RED);
-                    dialog.setVisible(false);
+                    dialog.dispose();
 
                 }
             });

@@ -4,9 +4,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07c806fc-076c-4586-86fc-6e170c42b695" name="更改" comment="风格">
+    <list default="true" id="07c806fc-076c-4586-86fc-6e170c42b695" name="更改" comment="优化">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudu/log/log4.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudu/seg0/c500.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/derby.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudoku/Game/ArrayDatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudoku/Game/ArrayDatabase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudoku/Game/SudokuGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudoku/Game/SudokuGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudoku/Game/SudokuGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudoku/Game/SudokuGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudoku/UI/NewGameUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudoku/UI/NewGameUI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudoku/UI/NewGameUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudoku/UI/NewGameUI$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudoku/UI/NewGameUI$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudoku/UI/NewGameUI$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudoku/UI/NewGameUI$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudoku/UI/NewGameUI$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudoku/UI/NewGameUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudoku/UI/NewGameUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudu/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudu/db.lck" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudu/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudu/log/log.ctrl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudu/log/log1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudu/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudu/log/logmirror.ctrl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudu/seg0/c10.dat" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudu/seg0/c10.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudu/seg0/c20.dat" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudu/seg0/c20.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudu/seg0/c230.dat" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudu/seg0/c230.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudu/seg0/c241.dat" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudu/seg0/c241.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudu/seg0/c251.dat" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudu/seg0/c251.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudu/seg0/c4a0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudoku/Game/ArrayDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku/Game/ArrayDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudoku/Game/SudokuGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku/Game/SudokuGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudoku/Game/SudokuGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku/Game/SudokuGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sudoku/UI/GameUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku/UI/GameUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sudoku/UI/NewGameUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku/UI/NewGameUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudu/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/sudu/db.lck" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudu/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/sudu/log/log.ctrl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudu/log/log1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudu/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/sudu/log/logmirror.ctrl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudu/seg0/c10.dat" beforeDir="false" afterPath="$PROJECT_DIR$/sudu/seg0/c10.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudu/seg0/c20.dat" beforeDir="false" afterPath="$PROJECT_DIR$/sudu/seg0/c20.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudu/seg0/c230.dat" beforeDir="false" afterPath="$PROJECT_DIR$/sudu/seg0/c230.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudu/seg0/c241.dat" beforeDir="false" afterPath="$PROJECT_DIR$/sudu/seg0/c241.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudu/seg0/c251.dat" beforeDir="false" afterPath="$PROJECT_DIR$/sudu/seg0/c251.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudu/seg0/c4a0.dat" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +84,7 @@
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -52,6 +93,11 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;derby&quot;
+    ]
   }
 }</component>
   <component name="RecentsManager">
@@ -59,13 +105,26 @@
       <recent name="sudoku.UI" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="应用程序.Framework">
     <configuration name="Framework" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sudoku.UI.Framework" />
       <module name="sudoku1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sudoku.UI.*" />
+          <option name="PATTERN" value="sudoku.UI.NumberSelectionDialog" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UIDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sudoku.UI.UIDemo" />
+      <module name="sudoku1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sudoku.UI.NumberSelectionDialog" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -76,6 +135,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="应用程序.Framework" />
+        <item itemvalue="应用程序.UIDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -102,6 +162,9 @@
       <workItem from="1698909036003" duration="6370000" />
       <workItem from="1699410895794" duration="138000" />
       <workItem from="1699411051458" duration="4141000" />
+      <workItem from="1699421125288" duration="12569000" />
+      <workItem from="1699446876313" duration="347000" />
+      <workItem from="1699447232564" duration="1626000" />
     </task>
     <task id="LOCAL-00001" summary="UI测试">
       <created>1697192602379</created>
@@ -142,7 +205,39 @@
       <option name="project" value="LOCAL" />
       <updated>1698913621524</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="优化">
+      <option name="closed" value="true" />
+      <created>1699427488049</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1699427488050</updated>
+    </task>
+    <task id="LOCAL-00007" summary="优化">
+      <option name="closed" value="true" />
+      <created>1699427540535</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1699427540535</updated>
+    </task>
+    <task id="LOCAL-00008" summary="优化">
+      <option name="closed" value="true" />
+      <created>1699427926661</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1699427926661</updated>
+    </task>
+    <task id="LOCAL-00009" summary="优化">
+      <option name="closed" value="true" />
+      <created>1699443339827</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1699443339827</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +260,7 @@
     <MESSAGE value="创建新游戏提示" />
     <MESSAGE value="显示题目+做题（无规则）" />
     <MESSAGE value="风格" />
-    <option name="LAST_COMMIT_MESSAGE" value="风格" />
+    <MESSAGE value="优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化" />
   </component>
 </project>

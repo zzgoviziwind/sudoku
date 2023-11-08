@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal" created-in="IU-231.9392.1">
-    <data-source name="sudu" uuid="2eab73ba-be10-491b-83ba-12a12d52be43">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="DERBY" exact-version="0" />
-      <secret-storage>forget</secret-storage>
-      <schema-mapping />
+    <data-source name="sudu" uuid="298d4f21-208c-4bda-acd1-fe30764fe035">
+      <database-info product="Apache Derby" version="10.16.1.1 - (1901046)" jdbc-version="4.2" driver-name="Apache Derby Embedded JDBC Driver" driver-version="10.16.1.1 - (1901046)" dbms="DERBY" exact-version="10.16.1.1" exact-driver-version="10.16">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema" qname="@" />
+        </introspection-scope>
+      </schema-mapping>
     </data-source>
   </component>
 </project>

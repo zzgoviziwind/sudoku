@@ -75,13 +75,13 @@ public class SudokuGenerator {
 
 
         if(dod == 1){
-            removeCount = 38;
+            removeCount = 20;
         }
         if(dod == 2){
-            removeCount = 45;
+            removeCount = 30;
         }
         if(dod == 3){
-            removeCount = 51;
+            removeCount = 40;
         }
 
 

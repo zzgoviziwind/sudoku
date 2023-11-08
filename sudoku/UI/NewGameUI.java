@@ -1,10 +1,12 @@
 package sudoku.UI;
 
+import sudoku.Game.SudokuGame;
 import sudoku.UI.GameUI;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.sql.SQLException;
 
 import javax.swing.UIManager;
 
@@ -15,6 +17,7 @@ public class NewGameUI {
 
     JDialog dialog;
     JLabel label;
+    int[][] num;
 
     public NewGameUI(){
         //窗口风格
@@ -51,6 +54,16 @@ public class NewGameUI {
             }
         });
 
+        button2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                frame.setVisible(false);
+                SudokuGame game = new SudokuGame();
+                num = game.retrieveArray();
+                GameUI gameUI = new GameUI(num);
+            }
+        });
+
 
 
 
@@ -63,37 +76,53 @@ public class NewGameUI {
         panel.add(button1);
         panel.add(button2);
 
-        //弹窗提示是否覆盖历史对局
+
+
+        //弹窗提示难度选择
         dialog = new JDialog(frame,"提醒",true);
         dialog.setSize(300,200);
         dialog.setLocationRelativeTo(null);
 
 
-        label = new JLabel("新游戏将覆盖历史进程");
+        label = new JLabel("     请选择游戏难度");
         label.setBounds(85,30,180,20);
 
-        button3 = new JButton("确定");
-        button4 = new JButton("取消");
+        button3 = new JButton("简单");
+        button4 = new JButton("困难");
         button3.setBounds(70,70,60,40);
         button4.setBounds(170,70,60,40);
 
-        // 为确定按钮添加点击事件监听器
+        // 按钮添加点击事件监听器
         button3.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 dialog.dispose(); // 关闭对话框
-                GameUI gameUI = new GameUI();
+                SudokuGame game = new SudokuGame();
+                num = game.GenerateSimpleLevels();
+                GameUI gameUI = new GameUI(num);
+                try {
+                    game.deleteArray();
+                } catch (SQLException ex) {
+                    throw new RuntimeException(ex);
+                }
             }
         });
 
-        // 为取消按钮添加点击事件监听器
         button4.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 dialog.dispose(); // 关闭对话框
-                frame.setVisible(true);
+                SudokuGame game = new SudokuGame();
+                num = game.GenerateDifficultLevels();
+                GameUI gameUI = new GameUI(num);
+                try {
+                    game.deleteArray();
+                } catch (SQLException ex) {
+                    throw new RuntimeException(ex);
+                }
             }
         });
+
 
         dialog.addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
