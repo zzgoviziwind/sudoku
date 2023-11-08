@@ -15,6 +15,10 @@ GameUI {
     JButton button;
     JPanel panel, panel2;
     JDialog dialog;
+    JMenuBar menuBar;
+    JMenu menu;
+    JMenuItem menuItem;
+
     int number, x = -1, y = -1;
     public GameUI() {
         frame = new JFrame("小呆呆做数独");
@@ -23,6 +27,9 @@ GameUI {
         frame.setResizable(false);
         frame.setLocationRelativeTo(null);
         frame.setLayout(new BorderLayout());
+
+
+
 
 
 
@@ -71,12 +78,15 @@ GameUI {
                 int finalRow = row;
                 cell[col][row].addActionListener(new ActionListener(){
                     public void actionPerformed(ActionEvent e) {
-                        int buttonX = cell[finalCol][finalRow].getLocationOnScreen().x;
-                        int buttonY = cell[finalCol][finalRow].getLocationOnScreen().y;
-                        dialog.setLocation(buttonX + cell[finalCol][finalRow].getWidth(), buttonY);
-                        dialog.setVisible(true);
-                        x = finalCol;
-                        y = finalRow;
+
+                        if ( num[finalCol][finalRow] == 0){
+                            int buttonX = cell[finalCol][finalRow].getLocationOnScreen().x;
+                            int buttonY = cell[finalCol][finalRow].getLocationOnScreen().y;
+                            dialog.setLocation(buttonX + cell[finalCol][finalRow].getWidth(), buttonY);
+                            dialog.setVisible(true);
+                            x = finalCol;
+                            y = finalRow;
+                        }
                     }
                 });
                 cell[col][row].setFont(new Font("微软雅黑", Font.BOLD, 30));
@@ -105,6 +115,7 @@ GameUI {
                     cell[x][y].setText(String.valueOf(number));
                     cell[x][y].setForeground(Color.RED);
                     dialog.setVisible(false);
+
                 }
             });
             panel2.add(button);
