@@ -6,20 +6,33 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
+import javax.swing.UIManager;
+
 public class NewGameUI {
     JFrame frame;
     JButton button1,button2,button3,button4;
-    JPanel panel;
+    JPanel panel, panel2;
+
     JDialog dialog;
     JLabel label;
 
     public NewGameUI(){
+        //窗口风格
+        try {
+            UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel"); // 选择Nimbus外观
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
         frame = new JFrame("NewGame");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(300,200);
         frame.setResizable(false);
         frame.setLocationRelativeTo(null);
         frame.setAlwaysOnTop(true);
+
+
 
 
 
@@ -40,6 +53,11 @@ public class NewGameUI {
 
 
 
+
+
+
+
+
         panel = new JPanel();
         panel.setLayout(new GridLayout(2, 1));
         panel.add(button1);
@@ -49,6 +67,7 @@ public class NewGameUI {
         dialog = new JDialog(frame,"提醒",true);
         dialog.setSize(300,200);
         dialog.setLocationRelativeTo(null);
+
 
         label = new JLabel("新游戏将覆盖历史进程");
         label.setBounds(85,30,180,20);
@@ -87,6 +106,12 @@ public class NewGameUI {
         dialog.add(label);
         dialog.add(button3);
         dialog.add(button4);
+
+
+
+
+
+
 
 
 
