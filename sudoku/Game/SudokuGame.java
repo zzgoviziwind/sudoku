@@ -68,12 +68,12 @@ public class SudokuGame {
 
 
     // 检查用户数独游戏是否正确
-    public void isGameCorrect(int[][] board) {
+    public String isGameCorrect(int[][] board) {
         SudokuSolved sudokuSolved = new SudokuSolved();
         if (sudokuSolved.isSudokuSolved(board)){
-            System.out.println("成功");
+            return "成功";
         }else {
-            System.out.println("失败");
+            return "失败";
         }
     }
 

@@ -14,10 +14,12 @@ GameUI {
     JButton[][] cell = new JButton[9][9];
     JButton button;
     JPanel panel, panel2;
-    JDialog dialog;
+    JDialog dialog, dialog2;
     JMenuBar menuBar;
     JMenu menu;
-    JMenuItem menuItem;
+    JLabel label;
+    JMenuItem menuItem, menuItem2;
+    int[][] num, num2;
 
     int number, x = -1, y = -1;
     public GameUI() {
@@ -34,9 +36,53 @@ GameUI {
 
 
 
+        menuBar = new JMenuBar();
+        menu = new JMenu("提交");
+        menuItem = new JMenuItem("提交");
+        menuItem.addActionListener(new ActionListener(){
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                for (int i = 0; i < 9; i++){
+                    for (int j = 0; j < 9; j++){
+                        if (num2[i][j] == 0 && !cell[i][j].getText().equals("")){
+                            num2[i][j] = Integer.parseInt(cell[i][j].getText());
+                        }
+                    }
+                }
+                SudokuGame sudokuGame = new SudokuGame();
+                label = new JLabel(sudokuGame.isGameCorrect(num2));
+                label.setFont(new Font("微软雅黑", Font.BOLD, 30));
+                dialog2 = new JDialog();
+                dialog2.add(label);
+                dialog2.setSize(200, 200);
+                dialog2.setVisible(true);
+                dialog2.setDefaultCloseOperation(JDialog.EXIT_ON_CLOSE);
+                dialog2.setLocationRelativeTo(null);
+            }
+        });
+
+        menu.add(menuItem);
+        menuBar.add(menu);
+        frame.setJMenuBar(menuBar);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         SudokuGame game = new SudokuGame();
-        int[][] num = game.GenerateSimpleLevels();
+        num = game.GenerateSimpleLevels();
+        num2 = num;
         // 创建一个面板
         panel = new JPanel(new GridLayout(9,9));
         //游戏界面
@@ -106,6 +152,7 @@ GameUI {
         for (int i = 1; i <= 9; i++) {
             button = new JButton(String.valueOf(i));
             button.setFont(new Font("微软雅黑", Font.BOLD, 30));
+            button.setForeground(Color.RED);
             int finalI = i;
 
             button.addActionListener(new ActionListener() {
