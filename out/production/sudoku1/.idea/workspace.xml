@@ -4,49 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07c806fc-076c-4586-86fc-6e170c42b695" name="更改" comment="优化">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sudu/log/log4.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sudu/seg0/c500.dat" afterDir="false" />
+    <list default="true" id="07c806fc-076c-4586-86fc-6e170c42b695" name="更改" comment="优化2">
+      <change afterPath="$PROJECT_DIR$/sudu/seg0/c5a0.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudu/seg0/d590.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/sudoku1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/sudoku1/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/derby.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudoku/Game/ArrayDatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudoku/Game/ArrayDatabase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudoku/Game/SudokuGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudoku/Game/SudokuGame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudoku/Game/SudokuGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudoku/Game/SudokuGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudoku/UI/NewGameUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudoku/UI/NewGameUI$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudoku/UI/NewGameUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudoku/UI/NewGameUI$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudoku/UI/NewGameUI$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudoku/UI/NewGameUI$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudoku/UI/NewGameUI$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudoku/UI/NewGameUI$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudoku/UI/NewGameUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudoku/UI/NewGameUI.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudu/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudu/db.lck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudu/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudu/log/log.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudu/log/log1.dat" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudu/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudu/log/logmirror.ctrl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudu/seg0/c10.dat" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudu/seg0/c10.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudu/seg0/c20.dat" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudu/seg0/c20.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudu/seg0/c230.dat" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudu/seg0/c230.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudu/seg0/c241.dat" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudu/seg0/c241.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudu/seg0/c251.dat" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudu/seg0/c251.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudu/seg0/c4a0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sudoku/Game/ArrayDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku/Game/ArrayDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sudoku/Game/SudokuGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku/Game/SudokuGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sudoku/Game/SudokuGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku/Game/SudokuGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sudoku/UI/GameUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku/UI/GameUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sudoku/UI/NewGameUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku/UI/NewGameUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sudu/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/sudu/db.lck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sudu/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/sudu/log/log.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sudu/log/log1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudu/log/log5.dat" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sudu/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/sudu/log/logmirror.ctrl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sudu/seg0/c10.dat" beforeDir="false" afterPath="$PROJECT_DIR$/sudu/seg0/c10.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sudu/seg0/c20.dat" beforeDir="false" afterPath="$PROJECT_DIR$/sudu/seg0/c20.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sudu/seg0/c230.dat" beforeDir="false" afterPath="$PROJECT_DIR$/sudu/seg0/c230.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sudu/seg0/c241.dat" beforeDir="false" afterPath="$PROJECT_DIR$/sudu/seg0/c241.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sudu/seg0/c251.dat" beforeDir="false" afterPath="$PROJECT_DIR$/sudu/seg0/c251.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sudu/seg0/c4a0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudu/seg0/c520.dat" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +146,9 @@
       <workItem from="1699411051458" duration="4141000" />
       <workItem from="1699421125288" duration="12569000" />
       <workItem from="1699446876313" duration="347000" />
-      <workItem from="1699447232564" duration="1626000" />
+      <workItem from="1699447232564" duration="2796000" />
+      <workItem from="1699450043028" duration="85000" />
+      <workItem from="1699450136493" duration="188000" />
     </task>
     <task id="LOCAL-00001" summary="UI测试">
       <created>1697192602379</created>
@@ -237,7 +221,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699443339827</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="优化2">
+      <option name="closed" value="true" />
+      <created>1699449294224</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1699449294224</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +253,7 @@
     <MESSAGE value="显示题目+做题（无规则）" />
     <MESSAGE value="风格" />
     <MESSAGE value="优化" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化" />
+    <MESSAGE value="优化2" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化2" />
   </component>
 </project>

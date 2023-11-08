@@ -32,7 +32,6 @@ GameUI {
         frame.setLocationRelativeTo(null);
         frame.setLayout(new BorderLayout());
 
-
         frame.addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
@@ -44,9 +43,6 @@ GameUI {
                 }
             }
         });
-
-
-
 
 
 
@@ -164,7 +160,7 @@ GameUI {
                         if ( num[finalCol][finalRow] == 0){
                             int buttonX = cell[finalCol][finalRow].getLocationOnScreen().x;
                             int buttonY = cell[finalCol][finalRow].getLocationOnScreen().y;
-                            dialog.setLocation(buttonX + cell[finalCol][finalRow].getWidth(), buttonY);
+                            dialog.setLocation(buttonX + cell[finalCol][finalRow].getWidth(), buttonY-cell[finalCol][finalRow].getWidth());
                             // 对话框未可见，显示它
                             dialog.setVisible(!dialog.isVisible()); // 对话框已可见，隐藏它
                             x = finalCol;
