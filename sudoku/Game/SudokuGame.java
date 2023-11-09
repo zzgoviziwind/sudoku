@@ -5,7 +5,7 @@ import java.sql.SQLException;
 public class SudokuGame {
 
 
-    // 在用户输入数字后更新游戏状态
+    //Update the game status after the user enters the number
     public void updateBoard(int row, int col, int value, int[][] board) {
         if (row >= 0 && row < 9 && col >= 0 && col < 9 && value >= 0 && value <= 9) {
             board[row][col] = value;
@@ -13,41 +13,40 @@ public class SudokuGame {
         }
     }
 
-//    Java和JDBC将一个二维整数数组存储为BLOB字段
+    //Java and JDBC store a two-dimensional array of integers as BLOB fields
     public void storeArray(int game_difficulty,String game_status,int[][] array) throws ClassNotFoundException {
         ArrayDatabase arrayDatabase = new ArrayDatabase();
         arrayDatabase.storeArray(game_difficulty,game_status,array);
     }
 
-    //检索BLOB数据并将其还原为二维数组
+    //Retrieves BLOB data and restores it to a two-dimensional array
     public int[][] retrieveArray(){
         ArrayDatabase arrayDatabase = new ArrayDatabase();
         return arrayDatabase.retrieveArray();
     }
-    //生成简单关卡
+    //Generate simple levels
     public int[][] GenerateSimpleLevels(){
         SudokuGenerator sudokuGenerator = new SudokuGenerator(1);
         return sudokuGenerator.getBoard();
     }
-    //生成中等关卡
+    //Generate medium level
     public int[][] GenerateMediumLevels(){
         SudokuGenerator sudokuGenerator = new SudokuGenerator(2);
         return sudokuGenerator.getBoard();
     }
-    //生成困难关卡
+    //Generate hard levels
     public int[][] GenerateDifficultLevels(){
         SudokuGenerator sudokuGenerator = new SudokuGenerator(3);
         return sudokuGenerator.getBoard();
     }
-//    删除记录
+    //deletion record
     public void deleteArray() throws SQLException {
         ArrayDatabase arrayDatabase = new ArrayDatabase();
         arrayDatabase.deleteArray();
     }
 
 
-    //判断用户是否完成
-
+    //Determine whether the user is finished
     public void isCompleted(int[][] board){
         boolean flag = true;
         for (int i = 0; i < 9; i++) {
@@ -61,13 +60,13 @@ public class SudokuGame {
         if (flag){
             System.out.println("completed");
         }else{
-            System.out.println("uncompleted");
+            System.out.println("no");
         }
     }
 
 
 
-    // 检查用户数独游戏是否正确
+    //Check whether the user only game is correct
     public String isGameCorrect(int[][] board) {
         SudokuSolved sudokuSolved = new SudokuSolved();
         if (sudokuSolved.isSudokuSolved(board)){
@@ -78,7 +77,7 @@ public class SudokuGame {
     }
 
 
-    //打印
+    //print
     public void print(int[][] board){
         for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 9; j++) {

@@ -1,0 +1,99 @@
+Index: out/production/sudoku1/.idea/dataSources.local.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"dataSourceStorageLocal\" created-in=\"IU-231.9392.1\">\r\n    <data-source name=\"sudu\" uuid=\"298d4f21-208c-4bda-acd1-fe30764fe035\">\r\n      <database-info product=\"Apache Derby\" version=\"10.16.1.1 - (1901046)\" jdbc-version=\"4.2\" driver-name=\"Apache Derby Embedded JDBC Driver\" driver-version=\"10.16.1.1 - (1901046)\" dbms=\"DERBY\" exact-version=\"10.16.1.1\" exact-driver-version=\"10.16\">\r\n        <identifier-quote-string>&quot;</identifier-quote-string>\r\n      </database-info>\r\n      <case-sensitivity plain-identifiers=\"upper\" quoted-identifiers=\"exact\" />\r\n      <secret-storage>master_key</secret-storage>\r\n      <schema-mapping>\r\n        <introspection-scope>\r\n          <node kind=\"schema\" qname=\"@\" />\r\n        </introspection-scope>\r\n      </schema-mapping>\r\n    </data-source>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/out/production/sudoku1/.idea/dataSources.local.xml b/out/production/sudoku1/.idea/dataSources.local.xml
+--- a/out/production/sudoku1/.idea/dataSources.local.xml	
++++ b/out/production/sudoku1/.idea/dataSources.local.xml	
+@@ -1,8 +1,8 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="dataSourceStorageLocal" created-in="IU-231.9392.1">
+-    <data-source name="sudu" uuid="298d4f21-208c-4bda-acd1-fe30764fe035">
+-      <database-info product="Apache Derby" version="10.16.1.1 - (1901046)" jdbc-version="4.2" driver-name="Apache Derby Embedded JDBC Driver" driver-version="10.16.1.1 - (1901046)" dbms="DERBY" exact-version="10.16.1.1" exact-driver-version="10.16">
++  <component name="dataSourceStorageLocal" created-in="IU-232.10072.27">
++    <data-source name="sudu" uuid="1dc36d51-a8b7-47b8-a947-d9dfe8fd23f1">
++      <database-info product="Apache Derby" version="10.14.1.0 - (1808820)" jdbc-version="4.2" driver-name="Apache Derby Embedded JDBC Driver" driver-version="10.14.1.0 - (1808820)" dbms="DERBY" exact-version="10.14.1.0" exact-driver-version="10.14">
+         <identifier-quote-string>&quot;</identifier-quote-string>
+       </database-info>
+       <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
+@@ -14,4 +14,4 @@
+       </schema-mapping>
+     </data-source>
+   </component>
+-</project>
+\ No newline at end of file
++</projec
+\ No newline at end of file
+Index: out/production/sudoku1/derby.log
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>----------------------------------------------------------------\r\nWed Nov 08 21:31:55 CST 2023:\r\nBooting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-018b-af21-e18b-00000f779e00 \r\non database directory D:\\文件\\外方课\\sudoku1\\sudu with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@71bc1ae4 \r\nLoaded from file:/D:/%e6%96%87%e4%bb%b6/%e5%a4%96%e6%96%b9%e8%af%be/sudoku1/lib/derby.jar\r\njava.vendor=Amazon.com Inc.\r\njava.runtime.version=11.0.21+9-LTS\r\nuser.dir=D:\\文件\\外方课\\sudoku1\r\nos.name=Windows 11\r\nos.arch=amd64\r\nos.version=10.0\r\nderby.system.home=null\r\nDatabase Class Loader started - derby.database.classpath=''\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/out/production/sudoku1/derby.log b/out/production/sudoku1/derby.log
+--- a/out/production/sudoku1/derby.log	
++++ b/out/production/sudoku1/derby.log	
+@@ -1,12 +1,12 @@
+ ----------------------------------------------------------------
+-Wed Nov 08 21:31:55 CST 2023:
+-Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-018b-af21-e18b-00000f779e00 
+-on database directory D:\文件\外方课\sudoku1\sudu with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@71bc1ae4 
+-Loaded from file:/D:/%e6%96%87%e4%bb%b6/%e5%a4%96%e6%96%b9%e8%af%be/sudoku1/lib/derby.jar
+-java.vendor=Amazon.com Inc.
+-java.runtime.version=11.0.21+9-LTS
+-user.dir=D:\文件\外方课\sudoku1
+-os.name=Windows 11
++Wed Nov 08 14:54:01 UTC 2023:
++Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.1.0 - (1808820): instance a816c00e-018b-af6d-09fd-0000073014e8 
++on database directory D:\sudoku\sudu with class loader com.intellij.database.remote.jdbc.impl.JdbcClassLoader$JdbcClassLoaderImpl@e580929 
++Loaded from file:/C:/Users/1/AppData/Roaming/JetBrains/IntelliJIdea2023.2/jdbc-drivers/Apache%20Derby/10.14.1.0/derby-10.14.1.0.jar
++java.vendor=JetBrains s.r.o.
++java.runtime.version=17.0.8.1+7-b1000.32
++user.dir=D:\sudoku
++os.name=Windows 10
+ os.arch=amd64
+ os.version=10.0
+ derby.system.home=null
+Index: .idea/dataSources.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"DataSourceManagerImpl\" format=\"xml\" multifile-model=\"true\">\r\n    <data-source source=\"LOCAL\" name=\"sudu\" uuid=\"298d4f21-208c-4bda-acd1-fe30764fe035\">\r\n      <driver-ref>derby.embedded</driver-ref>\r\n      <synchronize>true</synchronize>\r\n      <jdbc-driver>org.apache.derby.jdbc.EmbeddedDriver</jdbc-driver>\r\n      <jdbc-url>jdbc:derby:sudu</jdbc-url>\r\n      <working-dir>$ProjectFileDir$</working-dir>\r\n    </data-source>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/dataSources.xml b/.idea/dataSources.xml
+--- a/.idea/dataSources.xml	
++++ b/.idea/dataSources.xml	
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+-    <data-source source="LOCAL" name="sudu" uuid="298d4f21-208c-4bda-acd1-fe30764fe035">
++    <data-source source="LOCAL" name="sudu" uuid="1dc36d51-a8b7-47b8-a947-d9dfe8fd23f1">
+       <driver-ref>derby.embedded</driver-ref>
+       <synchronize>true</synchronize>
+       <jdbc-driver>org.apache.derby.jdbc.EmbeddedDriver</jdbc-driver>
+Index: out/production/sudoku1/.idea/dataSources.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"DataSourceManagerImpl\" format=\"xml\" multifile-model=\"true\">\r\n    <data-source source=\"LOCAL\" name=\"sudu\" uuid=\"298d4f21-208c-4bda-acd1-fe30764fe035\">\r\n      <driver-ref>derby.embedded</driver-ref>\r\n      <synchronize>true</synchronize>\r\n      <jdbc-driver>org.apache.derby.jdbc.EmbeddedDriver</jdbc-driver>\r\n      <jdbc-url>jdbc:derby:sudu</jdbc-url>\r\n      <working-dir>$ProjectFileDir$</working-dir>\r\n    </data-source>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/out/production/sudoku1/.idea/dataSources.xml b/out/production/sudoku1/.idea/dataSources.xml
+--- a/out/production/sudoku1/.idea/dataSources.xml	
++++ b/out/production/sudoku1/.idea/dataSources.xml	
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+-    <data-source source="LOCAL" name="sudu" uuid="298d4f21-208c-4bda-acd1-fe30764fe035">
++    <data-source source="LOCAL" name="sudu" uuid="1dc36d51-a8b7-47b8-a947-d9dfe8fd23f1">
+       <driver-ref>derby.embedded</driver-ref>
+       <synchronize>true</synchronize>
+       <jdbc-driver>org.apache.derby.jdbc.EmbeddedDriver</jdbc-driver>

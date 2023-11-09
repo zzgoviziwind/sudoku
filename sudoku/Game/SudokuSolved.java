@@ -2,7 +2,7 @@ package sudoku.Game;
 
 public class SudokuSolved {
     public boolean isSudokuSolved(int[][] board) {
-        // 检查每行是否包含1-9的所有数字
+        // Check that each row contains all numbers from 1 to 9
         for(int row = 0; row < 9; row++) {
             boolean[] isPresent = new boolean[9];
             for (int col = 0; col < 9; col++) {
@@ -14,7 +14,8 @@ public class SudokuSolved {
             }
         }
 
-        // 检查每列是否包含1-9的所有数字
+
+        // Check that each column contains all numbers from 1 to 9
         for (int col = 0; col < 9; col++) {
             boolean[] isPresent = new boolean[9];
             for (int row = 0; row < 9; row++) {
@@ -26,7 +27,7 @@ public class SudokuSolved {
             }
         }
 
-        // 检查每个3x3子网格是否包含1-9的所有数字
+        // Check that each 3x3 subgrid contains all numbers 1-9
         for (int rowStart = 0; rowStart < 9; rowStart += 3) {
             for (int colStart = 0; colStart < 9; colStart += 3) {
                 boolean[] isPresent = new boolean[9];

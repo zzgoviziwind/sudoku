@@ -3,40 +3,40 @@ package sudoku.Game;
 import java.io.*;
 import java.sql.*;
 
-
 public class ArrayDatabase {
 
+    //Connect to the database
     private static final String url = "jdbc:derby:sudu";
     private static final String user = "";
     private static final String password = "";
 
-    //Java和JDBC将一个二维整数数组存储为BLOB字段
+    //Java and JDBC store a two-dimensional array of integers as BLOB fields
     public void storeArray(int game_difficulty,String game_status,int[][] array) throws ClassNotFoundException {
 
 
         try {
             Connection connection = DriverManager.getConnection(url);
 
-            // 序列化数组
+            // Serialized array
             ByteArrayOutputStream bos = new ByteArrayOutputStream();
             ObjectOutputStream oos = new ObjectOutputStream(bos);
             oos.writeObject(array);
             byte[] arrayData = bos.toByteArray();
 
-            //将序列化的数组存储在数据库中
+            //Store the serialized array in the database
             String sql = "insert into SUDU_GAME (sudu_difficulty, sudu_status, sudu_data) values (?,?,?)";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
-            //设置参数
 
+            //set up parameters
             preparedStatement.setInt(1, game_difficulty);
             preparedStatement.setString(2, game_status);
             preparedStatement.setBlob(3, new ByteArrayInputStream(arrayData));
 
-            //5.执行sql
+            //Execute SQL query
             int count = preparedStatement.executeUpdate();//影响行数
-            //处理结果
+            //result of handling
             System.out.println(count > 0);
-
+            //close
             preparedStatement.close();
             connection.close();
         } catch (SQLException | IOException e) {
@@ -45,13 +45,13 @@ public class ArrayDatabase {
     }
 
 
-    //检索BLOB数据并将其还原为二维数组
+    //Retrieves BLOB data and restores it to a two-dimensional array
     public int[][] retrieveArray() {
         int[][] array = null;
         try {
             Connection connection = DriverManager.getConnection(url);
 
-            // 从数据库中检索序列化的数组
+            // Retrieves the serialized array from the database
             String selectQuery = "SELECT sudu_data FROM sudu_game";
             PreparedStatement preparedStatement = connection.prepareStatement(selectQuery);
 
@@ -65,7 +65,7 @@ public class ArrayDatabase {
 
 
 
-
+            //close
             resultSet.close();
             preparedStatement.close();
             connection.close();
@@ -81,15 +81,16 @@ public class ArrayDatabase {
         return array;
     }
 
+    //Delete database data
     public void deleteArray() throws SQLException {
         Connection connection = DriverManager.getConnection(url);
         String sql = "truncate table SUDU_GAME ";
         PreparedStatement preparedStatement = connection.prepareStatement(sql);
-        //5.执行sql
+        //Execute SQL query
         int count = preparedStatement.executeUpdate();//影响行数
-        //处理结果
+        //result of handling
         System.out.println(count == 0);
-
+        //close
         preparedStatement.close();
         connection.close();
 

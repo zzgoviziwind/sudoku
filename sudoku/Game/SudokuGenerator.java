@@ -13,13 +13,13 @@ public class SudokuGenerator {
         generateSudoku();
     }
 
-    // 生成数独谜题
+    // Generate Sudoku puzzles
     private void generateSudoku() {
         fillValues(0, 0);
         removeValues();
     }
 
-    // 递归填充数独谜题
+    // Recursively fill sudoku puzzles
     private boolean fillValues(int row, int col) {
         if (row == 9) {
             return true;
@@ -45,7 +45,7 @@ public class SudokuGenerator {
         return false;
     }
 
-    // 验证移动是否有效
+    // Verify that the move is valid
     private boolean isValidMove(int row, int col, int num) {
         // 检查同一行和同一列是否有相同的数字
         for (int i = 0; i < 9; i++) {
@@ -54,7 +54,7 @@ public class SudokuGenerator {
             }
         }
 
-        // 检查所在 3x3 子网格内是否有相同的数字
+        // Check to see if there are the same numbers in the 3x3 subgrid
         int startRow = row - row % 3;
         int startCol = col - col % 3;
         for (int i = startRow; i < startRow + 3; i++) {
@@ -68,10 +68,10 @@ public class SudokuGenerator {
         return true;
     }
 
-    // 随机移除一些数字以形成谜题
+    // Randomly remove some numbers to form a puzzle
     private void removeValues() {
         Random random = new Random();
-        // 要移除的数字数量，可以根据难度调整
+        // The number of numbers to remove can be adjusted based on difficulty
 
 
         if(dod == 1){

@@ -1,0 +1,58 @@
+Index: sudoku/Game/test.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package sudoku.Game;\r\n\r\n\r\n\r\nimport java.sql.SQLException;\r\n\r\npublic class test {\r\n    public static void main(String[] args) throws ClassNotFoundException, SQLException {\r\n      SudokuGame sudokuGame = new SudokuGame();\r\n//      int[][] board = sudokuGame.GenerateSimpleLevels();\r\n//      sudokuGame.print(board);\r\n//    sudokuGame.storeArray(1,\"未完成\",board);\r\n//        int[][]board = sudokuGame.retrieveArray();\r\n//        sudokuGame.print(board);\r\n//          sudokuGame.deleteArray();\r\n//        Scanner in = new Scanner(System.in);\r\n//\r\n//        while (!in.next().equals(\"4\")) {\r\n//            System.out.println(\"1.生成简单难度\");\r\n//            System.out.println(\"2.查看已生成的难度\");\r\n//            System.out.println(\"3.删除已生成的难度\");\r\n//            System.out.println(\"4.退出\");\r\n//            switch (in.next()) {\r\n//                case \"1\":\r\n//                    int[][] board = sudokuGame.GenerateSimpleLevels();\r\n//                    sudokuGame.print(board);\r\n//                    sudokuGame.storeArray(1,\"未完成\",board);\r\n//                    break;\r\n//                case \"2\":\r\n//                    int[][]board1 = sudokuGame.retrieveArray();\r\n//                    sudokuGame.print(board1);\r\n//                    break;\r\n//                case \"3\":\r\n//                    sudokuGame.deleteArray();\r\n//                    break;\r\n//                default:\r\n//                    break;\r\n//            }\r\n//        }\r\n\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/sudoku/Game/test.java b/sudoku/Game/test.java
+--- a/sudoku/Game/test.java	(revision fb98281cb53bbbfae6f5e57f452513a8cf9a3b05)
++++ b/sudoku/Game/test.java	(date 1699442863578)
+@@ -37,6 +37,20 @@
+ //                    break;
+ //            }
+ //        }
++//        int[][] board = {
++//                {5, 3, 4, 6, 7, 8, 9, 1, 2},
++//                {6, 7, 2, 1, 9, 5, 3, 4, 8},
++//                {1, 9, 8, 3, 4, 2, 5, 6, 7},
++//                {8, 5, 9, 7, 6, 1, 4, 2, 3},
++//                {4, 2, 6, 8, 5, 3, 7, 9, 1},
++//                {7, 1, 3, 9, 2, 4, 8, 5, 6},
++//                {9, 6, 1, 5, 3, 7, 2, 8, 4},
++//                {2, 8, 7, 4, 1, 9, 6, 3, 5},
++//                {3, 4, 5, 2, 8, 6, 1, 7, 9}
++//        };
++//        sudokuGame.isGameCorrect(board);
++
++
+ 
+     }
+ }
+Index: derby.log
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>----------------------------------------------------------------\r\nThu Nov 02 20:25:32 CST 2023:\r\nBooting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-018b-8ffe-f1fe-00000f600000 \r\non database directory D:\\sudoku\\sudu with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@71bc1ae4 \r\nLoaded from file:/D:/sudoku/lib/derby.jar\r\njava.vendor=Amazon.com Inc.\r\njava.runtime.version=11.0.21+9-LTS\r\nuser.dir=D:\\sudoku\r\nos.name=Windows 10\r\nos.arch=amd64\r\nos.version=10.0\r\nderby.system.home=null\r\nDatabase Class Loader started - derby.database.classpath=''\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/derby.log b/derby.log
+--- a/derby.log	(revision fb98281cb53bbbfae6f5e57f452513a8cf9a3b05)
++++ b/derby.log	(date 1699437994929)
+@@ -1,10 +1,10 @@
+ ----------------------------------------------------------------
+-Thu Nov 02 20:25:32 CST 2023:
+-Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-018b-8ffe-f1fe-00000f600000 
+-on database directory D:\sudoku\sudu with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@71bc1ae4 
+-Loaded from file:/D:/sudoku/lib/derby.jar
+-java.vendor=Amazon.com Inc.
+-java.runtime.version=11.0.21+9-LTS
++Wed Nov 08 10:06:34 UTC 2023:
++Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.1.0 - (1808820): instance a816c00e-018b-ae65-e0fd-000007380fb8 
++on database directory D:\sudoku\sudu with class loader com.intellij.database.remote.jdbc.impl.JdbcClassLoader$JdbcClassLoaderImpl@e580929 
++Loaded from file:/C:/Users/1/AppData/Roaming/JetBrains/IntelliJIdea2023.2/jdbc-drivers/Apache%20Derby/10.14.1.0/derby-10.14.1.0.jar
++java.vendor=JetBrains s.r.o.
++java.runtime.version=17.0.8.1+7-b1000.32
+ user.dir=D:\sudoku
+ os.name=Windows 10
+ os.arch=amd64
