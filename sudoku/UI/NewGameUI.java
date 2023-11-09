@@ -92,13 +92,13 @@ public class NewGameUI {
         dialog.setLocationRelativeTo(null);
 
 
-        label = new JLabel("     Please select the game difficulty");
-        label.setBounds(85,30,180,20);
+        label = new JLabel("Please select the game difficulty");
+        label.setBounds(60,30,190,20);
 
         button3 = new JButton("simpleness");
         button4 = new JButton("difficulty");
-        button3.setBounds(70,70,60,40);
-        button4.setBounds(170,70,60,40);
+        button3.setBounds(40,80,100,40);
+        button4.setBounds(150,80,100,40);
 
         // Button to add a click event listener
         button3.addActionListener(new ActionListener() {

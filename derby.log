@@ -1,6 +1,6 @@
 ----------------------------------------------------------------
-Thu Nov 09 13:15:48 CST 2023:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-018b-b282-0973-00000f7153f0 
+Thu Nov 09 14:02:32 CST 2023:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-018b-b2ac-d381-00000f7a0a00 
 on database directory D:\文件\外方课\sudoku1\sudu with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@71bc1ae4 
 Loaded from file:/D:/%e6%96%87%e4%bb%b6/%e5%a4%96%e6%96%b9%e8%af%be/sudoku1/lib/derby.jar
 java.vendor=Amazon.com Inc.
