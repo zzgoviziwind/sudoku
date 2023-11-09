@@ -20,7 +20,7 @@ public class NewGameUI {
     int[][] num;
 
     public NewGameUI(){
-        //窗口风格
+        //windowStyle
         try {
             UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel"); // 选择Nimbus外观
         } catch (Exception e) {
@@ -41,11 +41,13 @@ public class NewGameUI {
 
 
 
-        //新游戏or读取上次进度
-        button1 = new JButton("新游戏");
-        button2 = new JButton("继续游戏");
+        //newGame Or Read Last Progress
+        button1 = new JButton("newGame");
+        button2 = new JButton("continueTheGame");
         button1.setBounds(20, 20, 60, 40);
         button2.setBounds(20, 50, 60, 40);
+
+        //New game, pop-up dialog to choose the game difficulty
         button1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -54,6 +56,7 @@ public class NewGameUI {
             }
         });
 
+        //Continue the game, reading the two-dimensional array in the database to play
         button2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -83,25 +86,25 @@ public class NewGameUI {
 
 
 
-        //弹窗提示难度选择
-        dialog = new JDialog(frame,"提醒",true);
+        //pop Up Window Prompts Difficulty Selection
+        dialog = new JDialog(frame,"remind",true);
         dialog.setSize(300,200);
         dialog.setLocationRelativeTo(null);
 
 
-        label = new JLabel("     请选择游戏难度");
+        label = new JLabel("     Please select the game difficulty");
         label.setBounds(85,30,180,20);
 
-        button3 = new JButton("简单");
-        button4 = new JButton("困难");
+        button3 = new JButton("simpleness");
+        button4 = new JButton("difficulty");
         button3.setBounds(70,70,60,40);
         button4.setBounds(170,70,60,40);
 
-        // 按钮添加点击事件监听器
+        // Button to add a click event listener
         button3.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                dialog.dispose(); // 关闭对话框
+                dialog.dispose(); // close Dialogue Box
                 SudokuGame game = new SudokuGame();
                 num = game.GenerateSimpleLevels();
                 GameUI gameUI = new GameUI(num);
@@ -116,7 +119,7 @@ public class NewGameUI {
         button4.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                dialog.dispose(); // 关闭对话框
+                dialog.dispose(); // close Dialogue Box
                 SudokuGame game = new SudokuGame();
                 num = game.GenerateDifficultLevels();
                 GameUI gameUI = new GameUI(num);
@@ -131,7 +134,7 @@ public class NewGameUI {
 
         dialog.addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
-                dialog.dispose(); // 关闭对话框
+                dialog.dispose(); // close Dialogue Box
                 frame.setVisible(true);
             }
         });

@@ -25,19 +25,21 @@ GameUI {
 
     int number, x = -1, y = -1;
     public GameUI(int[][] num) {
-        frame = new JFrame("小呆呆做数独");
+        //game main Interface frame
+        frame = new JFrame("Little nerds doing sudoku");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(600, 600);
         frame.setResizable(false);
         frame.setLocationRelativeTo(null);
         frame.setLayout(new BorderLayout());
 
+        //Listen to window close button to save the record when closed
         frame.addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
                 SudokuGame sudokuGame = new SudokuGame();
                 try {
-                    sudokuGame.storeArray(1,"未完成", num2);
+                    sudokuGame.storeArray(1,"uncompleted", num2);
                 } catch (ClassNotFoundException ex) {
                     throw new RuntimeException(ex);
                 }
@@ -48,11 +50,13 @@ GameUI {
 
 
 
+        //menuBar
         menuBar = new JMenuBar();
-        menu = new JMenu("菜单");
+        menu = new JMenu("menu");
 
-        menuItem = new JMenuItem("提交");
-        menuItem2 = new JMenuItem("保存");
+        menuItem = new JMenuItem("submit");
+        menuItem2 = new JMenuItem("save");
+        //The Submit button judges the Sudoku submitted by the player and gives the result
         menuItem.addActionListener(new ActionListener(){
 
             @Override
@@ -74,7 +78,7 @@ GameUI {
                 dialog2.setVisible(true);
                 dialog2.setLocationRelativeTo(null);
                 try {
-                    sudokuGame.storeArray(1,"未完成", num2);
+                    sudokuGame.storeArray(1,"uncompleted", num2);
                 } catch (ClassNotFoundException ex) {
                     throw new RuntimeException(ex);
                 }
@@ -82,7 +86,7 @@ GameUI {
         });
 
 
-        //保存
+        //save
         menuItem2.addActionListener(new ActionListener(){
 
             @Override
@@ -96,7 +100,7 @@ GameUI {
                     }
                 }
                 try {
-                    sudokuGame.storeArray(1,"未完成", num2);
+                    sudokuGame.storeArray(1,"uncompleted", num2);
                 } catch (ClassNotFoundException ex) {
                     throw new RuntimeException(ex);
                 }
@@ -114,10 +118,12 @@ GameUI {
 
 
 
+        //Use num 2 to record the initial problem
         num2 = num;
-        // 创建一个面板
+        // create A Panel
         panel = new JPanel(new GridLayout(9,9));
-        //游戏界面
+        //Game interface
+        //Give the 9 squares of 33 different colors
         for (int col = 0; col < 9; col++){
             for (int row = 0; row < 9; row++){
                 if (num[col][row] != 0){
@@ -152,6 +158,10 @@ GameUI {
                     }
                 }
 
+
+
+
+                //Add listeners to the 81 Buttons and click Show or hide the dialog with the numbers
                 int finalCol = col;
                 int finalRow = row;
                 cell[col][row].addActionListener(new ActionListener(){
@@ -161,8 +171,8 @@ GameUI {
                             int buttonX = cell[finalCol][finalRow].getLocationOnScreen().x;
                             int buttonY = cell[finalCol][finalRow].getLocationOnScreen().y;
                             dialog.setLocation(buttonX + cell[finalCol][finalRow].getWidth(), buttonY-cell[finalCol][finalRow].getWidth());
-                            // 对话框未可见，显示它
-                            dialog.setVisible(!dialog.isVisible()); // 对话框已可见，隐藏它
+                            //Dialog box not visible, display it.  The dialog box is visible, hide it.
+                            dialog.setVisible(!dialog.isVisible());
                             x = finalCol;
                             y = finalRow;
                         }
@@ -178,6 +188,8 @@ GameUI {
 
 
 
+        //Fill in the answer dialog.
+        // After clicking,fill the text content of the button of the clicked dialog into the button of the selected 9*9
         panel2 = new JPanel(new GridLayout(3,3));
         dialog = new JDialog();
         dialog.setSize(200, 200);

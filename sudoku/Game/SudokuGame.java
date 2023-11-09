@@ -59,9 +59,9 @@ public class SudokuGame {
         }
 
         if (flag){
-            System.out.println("已完成");
+            System.out.println("completed");
         }else{
-            System.out.println("未完成");
+            System.out.println("uncompleted");
         }
     }
 
@@ -71,9 +71,9 @@ public class SudokuGame {
     public String isGameCorrect(int[][] board) {
         SudokuSolved sudokuSolved = new SudokuSolved();
         if (sudokuSolved.isSudokuSolved(board)){
-            return "       成功!";
+            return "       win!";
         }else {
-            return "       失败!";
+            return "       lose!";
         }
     }
 
