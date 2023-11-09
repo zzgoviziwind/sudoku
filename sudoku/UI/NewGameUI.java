@@ -61,6 +61,11 @@ public class NewGameUI {
                 SudokuGame game = new SudokuGame();
                 num = game.retrieveArray();
                 GameUI gameUI = new GameUI(num);
+                try {
+                    game.deleteArray();
+                } catch (SQLException ex) {
+                    throw new RuntimeException(ex);
+                }
             }
         });
 

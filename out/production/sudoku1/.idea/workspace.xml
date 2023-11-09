@@ -4,32 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07c806fc-076c-4586-86fc-6e170c42b695" name="更改" comment="优化2">
-      <change afterPath="$PROJECT_DIR$/sudu/seg0/c5a0.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sudu/seg0/d590.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/derby.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudu/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudu/db.lck" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudu/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudu/log/log.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudu/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudu/log/logmirror.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudu/seg0/c10.dat" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudu/seg0/c10.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudu/seg0/c20.dat" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudu/seg0/c20.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudu/seg0/c230.dat" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudu/seg0/c230.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudu/seg0/c241.dat" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudu/seg0/c241.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sudoku1/sudu/seg0/c251.dat" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sudoku1/sudu/seg0/c251.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sudoku/UI/GameUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku/UI/GameUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sudu/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/sudu/db.lck" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sudu/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/sudu/log/log.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sudu/log/log5.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sudu/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/sudu/log/logmirror.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sudu/seg0/c10.dat" beforeDir="false" afterPath="$PROJECT_DIR$/sudu/seg0/c10.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sudu/seg0/c20.dat" beforeDir="false" afterPath="$PROJECT_DIR$/sudu/seg0/c20.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sudu/seg0/c230.dat" beforeDir="false" afterPath="$PROJECT_DIR$/sudu/seg0/c230.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sudu/seg0/c241.dat" beforeDir="false" afterPath="$PROJECT_DIR$/sudu/seg0/c241.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sudu/seg0/c251.dat" beforeDir="false" afterPath="$PROJECT_DIR$/sudu/seg0/c251.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sudu/seg0/c520.dat" beforeDir="false" />
-    </list>
+    <list default="true" id="07c806fc-076c-4586-86fc-6e170c42b695" name="更改" comment="优化3" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -149,6 +124,7 @@
       <workItem from="1699447232564" duration="2796000" />
       <workItem from="1699450043028" duration="85000" />
       <workItem from="1699450136493" duration="188000" />
+      <workItem from="1699450334941" duration="758000" />
     </task>
     <task id="LOCAL-00001" summary="UI测试">
       <created>1697192602379</created>
@@ -229,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699449294224</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="优化3">
+      <option name="closed" value="true" />
+      <created>1699450492790</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1699450492790</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,6 +238,7 @@
     <MESSAGE value="风格" />
     <MESSAGE value="优化" />
     <MESSAGE value="优化2" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化2" />
+    <MESSAGE value="优化3" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化3" />
   </component>
 </project>
