@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="sudoku:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/sudoku_jar</output-path>
+    <root id="archive" name="sudoku.jar">
+      <element id="module-output" name="sudoku" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/sudoku/library/derby.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/sudoku/library/derbyclient.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

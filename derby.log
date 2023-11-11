@@ -1,12 +1,12 @@
 ----------------------------------------------------------------
-Thu Nov 09 06:39:18 UTC 2023:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.1.0 - (1808820): instance a816c00e-018b-b2ce-7be9-000007311a28 
-on database directory D:\sudoku\sudu with class loader com.intellij.database.remote.jdbc.impl.JdbcClassLoader$JdbcClassLoaderImpl@e580929 
-Loaded from file:/C:/Users/1/AppData/Roaming/JetBrains/IntelliJIdea2023.2/jdbc-drivers/Apache%20Derby/10.14.1.0/derby-10.14.1.0.jar
-java.vendor=JetBrains s.r.o.
-java.runtime.version=17.0.8.1+7-b1000.32
-user.dir=D:\sudoku
-os.name=Windows 10
+Sat Nov 11 14:54:28 CST 2023:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-018b-bd29-16e3-00000ea832e0 
+on database directory D:\Program Files (x86)\sudoku\sudoku\sudu with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@71bc1ae4 
+Loaded from file:/D:/Program%20Files%20(x86)/sudoku/sudoku/sudoku/library/derby.jar
+java.vendor=Amazon.com Inc.
+java.runtime.version=11.0.21+9-LTS
+user.dir=D:\Program Files (x86)\sudoku\sudoku
+os.name=Windows 11
 os.arch=amd64
 os.version=10.0
 derby.system.home=null

@@ -2,6 +2,7 @@ package sudoku.UI;
 
 import sudoku.Game.SudokuGame;
 import sudoku.UI.GameUI;
+import sudoku.Game.ArrayDatabase;
 
 import javax.swing.*;
 import java.awt.*;
@@ -14,7 +15,6 @@ public class NewGameUI {
     JFrame frame;
     JButton button1,button2,button3,button4;
     JPanel panel, panel2;
-
     JDialog dialog;
     JLabel label;
     int[][] num;
@@ -27,19 +27,12 @@ public class NewGameUI {
             e.printStackTrace();
         }
 
-
         frame = new JFrame("NewGame");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(300,200);
         frame.setResizable(false);
         frame.setLocationRelativeTo(null);
         frame.setAlwaysOnTop(true);
-
-
-
-
-
-
 
         //newGame Or Read Last Progress
         button1 = new JButton("newGame");
@@ -63,6 +56,10 @@ public class NewGameUI {
                 frame.setVisible(false);
                 SudokuGame game = new SudokuGame();
                 num = game.retrieveArray();
+                if (num == null) {
+                    button1.doClick();
+                    return;
+                }
                 GameUI gameUI = new GameUI(num);
                 try {
                     game.deleteArray();
@@ -72,19 +69,10 @@ public class NewGameUI {
             }
         });
 
-
-
-
-
-
-
-
         panel = new JPanel();
         panel.setLayout(new GridLayout(2, 1));
         panel.add(button1);
         panel.add(button2);
-
-
 
         //pop Up Window Prompts Difficulty Selection
         dialog = new JDialog(frame,"remind",true);
@@ -143,14 +131,6 @@ public class NewGameUI {
         dialog.add(label);
         dialog.add(button3);
         dialog.add(button4);
-
-
-
-
-
-
-
-
 
         frame.add(panel);
         frame.setVisible(true);

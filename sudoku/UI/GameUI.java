@@ -40,6 +40,7 @@ GameUI {
                 SudokuGame sudokuGame = new SudokuGame();
                 try {
                     sudokuGame.storeArray(1,"uncompleted", num2);
+
                 } catch (ClassNotFoundException ex) {
                     throw new RuntimeException(ex);
                 }
@@ -113,11 +114,6 @@ GameUI {
         menuBar.add(menu);
         frame.setJMenuBar(menuBar);
 
-
-
-
-
-
         //Use num 2 to record the initial problem
         num2 = num;
         // create A Panel
@@ -186,8 +182,6 @@ GameUI {
         frame.add(panel, BorderLayout.CENTER);
 
 
-
-
         //Fill in the answer dialog.
         // After clicking,fill the text content of the button of the clicked dialog into the button of the selected 9*9
         panel2 = new JPanel(new GridLayout(3,3));
@@ -215,10 +209,6 @@ GameUI {
         dialog.add(panel2);
         dialog.setUndecorated(true);
         dialog.setLocationRelativeTo(null);
-
-
-
-
 
 
         frame.setVisible(true);
